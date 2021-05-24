@@ -1,0 +1,32 @@
+{
+      "name": "vermaabhinav313",
+      "description": "A Beta Telegram Anime Bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "LEGEND"
+      ],   
+   "repository": "https://github.com/vermaabhinav313/AniFluid-Base",
+   "addons": [
+      {
+         "options": {
+            "version": "13"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Get one from @BotFather duh",
+         "required": true,
+         "value": "1116002218:AAH-LTCBa7llxdmYolrpFJ_sEo1lUnf99II"
